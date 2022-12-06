@@ -1,0 +1,150 @@
+---
+title: "data analysis"
+author: "Siyu Wang"
+date: "12/6/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(broom)
+install.packages("lsr")
+library(lsr)
+library(car)
+```
+
+Data analysis for VR+PC
+```{r}
+data<-read.csv("PC_VR.csv") %>% select(-char)
+```
+
+```{r}
+data_long<-gather(data,measure,score,word:word_weighted)
+```
+
+```{r}
+summary<-data_long %>% group_by(condition,measure) %>% summarise(mean=mean(score),sd=sd(score),se=sd/sqrt(n()), upper=mean+se*1.96, lower=mean-se*1.96)
+```
+
+```{r}
+group_means <- data_long %>%
+  group_by(condition, measure) %>%
+  summarise(score = mean(score))
+
+ggplot(data_long, aes(condition, score, color = condition)) +
+  geom_jitter(alpha = .2) +
+  geom_violin(aes(fill = condition), alpha = .2) +
+  facet_wrap(~measure) +
+  geom_point(data = group_means, size = 2) +
+  labs(x = "measure", y = "score") +
+  theme_bw()
+```
+
+t-test for word (in task):
+```{r}
+result_word <- t.test(data %>% filter(condition == "VR") %>% pull(word),
+                      data %>% filter(condition == "PC") %>% pull(word), paired = TRUE) %>%
+  tidy()
+```
+
+effect size for word:
+```{r}
+cohensD(data %>% filter(condition == "VR") %>% pull(word),
+                      data %>% filter(condition == "PC") %>% pull(word),method="paired")
+```
+
+t-test for weighted word (in-task):
+```{r}
+result_word_weighted <- t.test(data %>% filter(condition == "VR") %>% pull(word_weighted),
+                      data %>% filter(condition == "PC") %>% pull(word_weighted), paired = TRUE) %>%
+  tidy()
+```
+
+effect size for weighted word:
+```{r}
+cohensD(data %>% filter(condition == "VR") %>% pull(word_weighted),
+                      data %>% filter(condition == "PC") %>% pull(word_weighted),method="paired")
+```
+
+t-test for speed (pre-task):
+```{r}
+result_prespeed <- t.test(data %>% filter(condition == "VR") %>% pull(speed_pre),
+                      data %>% filter(condition == "PC") %>% pull(speed_pre), paired = TRUE) %>%
+  tidy()
+```
+
+effect size for speed (pre-task):
+```{r}
+cohensD(data %>% filter(condition == "VR") %>% pull(speed_pre),
+                      data %>% filter(condition == "PC") %>% pull(speed_pre),method="paired")
+```
+
+Data analysis for PC+Mask:
+```{r}
+data2<-read.csv("PC_MASK.csv") %>% select(-char)
+```
+
+Data analysis for VR+PC
+```{r}
+data_long2<-gather(data2,measure,score,PreSpeedbb:word_weighted)
+```
+
+```{r}
+summary2<-data_long2 %>% group_by(condition,measure) %>% summarise(mean=mean(score),sd=sd(score),se=sd/sqrt(n()), upper=mean+se*1.96, lower=mean-se*1.96)
+```
+
+```{r}
+group_means <- data_long2 %>%
+  group_by(condition, measure) %>%
+  summarise(score = mean(score))
+
+ggplot(data_long2, aes(condition, score, color = condition)) +
+  geom_jitter(alpha = .2) +
+  geom_violin(aes(fill = condition), alpha = .2) +
+  facet_wrap(~measure) +
+  geom_point(data = group_means, size = 2) +
+  labs(x = "measure", y = "score") +
+  theme_bw()
+```
+t-test for word (in task):
+```{r}
+result_word2 <- t.test(data2 %>% filter(condition == "PC") %>% pull(word),
+                      data2 %>% filter(condition == "Mask") %>% pull(word), paired = TRUE) %>%
+  tidy()
+```
+
+effect size for word:
+```{r}
+cohensD(data2 %>% filter(condition == "PC") %>% pull(word),
+                      data2 %>% filter(condition == "Mask") %>% pull(word),method="paired")
+```
+
+t-test for weighted word (in-task):
+```{r}
+result_word_weighted2 <- t.test(data2 %>% filter(condition == "PC") %>% pull(word_weighted),
+                      data2 %>% filter(condition == "Mask") %>% pull(word_weighted), paired = TRUE) %>%
+  tidy()
+```
+
+effect size for weighted word:
+```{r}
+cohensD(data2 %>% filter(condition == "PC") %>% pull(word_weighted),
+                      data2 %>% filter(condition == "Mask") %>% pull(word_weighted),method="paired")
+```
+
+t-test for speed (pre-task):
+```{r}
+result_prespeed2 <- t.test(data2 %>% filter(condition == "PC") %>% pull(PreSpeed),
+                      data2 %>% filter(condition == "Mask") %>% pull(PreSpeed), paired = TRUE) %>%
+  tidy()
+```
+
+effect size for speed (pre-task):
+```{r}
+cohensD(data2 %>% filter(condition == "PC") %>% pull(PreSpeed),
+                      data2 %>% filter(condition == "Mask") %>% pull(PreSpeed),method="paired")
+```

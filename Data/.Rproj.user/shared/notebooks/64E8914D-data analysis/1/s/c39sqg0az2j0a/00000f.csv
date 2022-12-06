@@ -1,0 +1,6 @@
+"0","cohensD(data %>% filter(condition == ""VR"") %>% pull(word),"
+"0","                      data %>% filter(condition == ""PC"") %>% pull(word),method=""paired"")"
+"1","[1]"
+"1"," 0.3006313"
+"1","
+"
