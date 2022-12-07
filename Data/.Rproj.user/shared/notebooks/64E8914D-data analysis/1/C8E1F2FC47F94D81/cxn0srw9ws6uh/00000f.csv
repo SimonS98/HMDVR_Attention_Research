@@ -1,3 +1,0 @@
-"0","result_word <- t.test(data %>% filter(condition == ""VR"") %>% pull(word),"
-"0","                      data %>% filter(condition == ""PC"") %>% pull(word), paired = TRUE) %>%"
-"0","  tidy()"

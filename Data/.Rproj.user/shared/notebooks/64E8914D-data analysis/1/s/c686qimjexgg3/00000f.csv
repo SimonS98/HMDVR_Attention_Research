@@ -1,3 +1,0 @@
-"0","result_prespeed <- t.test(data %>% filter(condition == ""VR"") %>% pull(speed_pre),"
-"0","                      data %>% filter(condition == ""PC"") %>% pull(speed_pre), paired = TRUE) %>%"
-"0","  tidy()"

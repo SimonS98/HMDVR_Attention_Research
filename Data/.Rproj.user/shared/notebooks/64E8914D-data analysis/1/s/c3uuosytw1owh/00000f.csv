@@ -1,6 +1,0 @@
-"0","cohensD(data %>% filter(condition == ""VR"") %>% pull(word_weighted),"
-"0","                      data %>% filter(condition == ""PC"") %>% pull(word_weighted),method=""paired"")"
-"1","[1]"
-"1"," 1.09815"
-"1","
-"

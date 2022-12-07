@@ -1,8 +1,0 @@
-"0","data_long2<-gather(data2,measure,score,PreSpeedbb:word_weighted)"
-"1","[1m[33mError[39m in `gather()`:[22m
-[33m![39m Can't subset columns that don't exist.
-[31m✖[39m Column `PreSpeedbb` doesn't exist.
-Backtrace:
-[90m 1. [39m[1mtidyr[22m::gather(data2, measure, score, PreSpeedbb:word_weighted)
-[90m 2. [39m[1m[94mtidyr:::gather.data.frame([39m[22mdata2, measure, score, PreSpeedbb:word_weighted[1m[94m)[39m[22m
-"

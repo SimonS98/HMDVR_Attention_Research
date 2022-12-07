@@ -1,6 +1,0 @@
-"0","cohensD(data %>% filter(condition == ""VR"") %>% pull(speed_pre),"
-"0","                      data %>% filter(condition == ""PC"") %>% pull(speed_pre),method=""paired"")"
-"1","[1]"
-"1"," 1.760758"
-"1","
-"

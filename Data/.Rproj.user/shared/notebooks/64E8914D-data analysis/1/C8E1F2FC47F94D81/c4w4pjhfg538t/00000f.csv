@@ -1,1 +1,0 @@
-"0","data2<-read.csv(""PC_MASK.csv"") %>% select(-char)"
