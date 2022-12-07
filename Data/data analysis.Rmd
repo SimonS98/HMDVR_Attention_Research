@@ -148,3 +148,11 @@ effect size for speed (pre-task):
 cohensD(data2 %>% filter(condition == "PC") %>% pull(PreSpeed),
                       data2 %>% filter(condition == "Mask") %>% pull(PreSpeed),method="paired")
 ```
+write.csv(data,"/Users/simonsheng/HMDVR_Attention_Research/Data/Result/data.csv",row.names=FALSE)
+write.csv(data_long,"/Users/simonsheng/HMDVR_Attention_Research/Data/Result/data_long.csv",row.names=FALSE)
+write.csv(data2,"/Users/simonsheng/HMDVR_Attention_Research/Data/Result/data2.csv",row.names=FALSE)
+write.csv(group_means,"/Users/simonsheng/HMDVR_Attention_Research/Data/Result/group_means.csv",row.names=FALSE)
+write.csv(result_prespeed,"/Users/simonsheng/HMDVR_Attention_Research/Data/Result/result_prespeed.csv",row.names=FALSE)
+write.csv(result_word,"/Users/simonsheng/HMDVR_Attention_Research/Data/Result/result_word.csv",row.names=FALSE)
+write.csv(result_word_weighted,"/Users/simonsheng/HMDVR_Attention_Research/Data/Result/result_word_weighted.csv",row.names=FALSE)
+write.csv(summary,"/Users/simonsheng/HMDVR_Attention_Research/Data/Result/summary.csv",row.names=FALSE)
