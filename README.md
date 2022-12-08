@@ -10,4 +10,4 @@
 
 ### My [data and R script](/Data) is open for viewing, you can also check out my [results](/Data/Result).
 
-Here is the [link](https://github.com/SimonS98/HMDVR_Attention_Research) to trace back to this github site
+### Here is the [link](https://github.com/SimonS98/HMDVR_Attention_Research) to trace back to this github repo.
