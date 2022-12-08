@@ -8,4 +8,4 @@ Or you can watch me briefly introduce [my study](https://youtu.be/6-FEdMdbTy0)
 
 If you want, here is my [presentation slides](/SixiongSheng_Slides_Thesis.pdf)
 
-My [data and R script](/Data) is open for viewing.
+My [data and R script](/Data) is open for viewing, you can also check out my [results](/Data/Result).
