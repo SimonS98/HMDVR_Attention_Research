@@ -11,3 +11,5 @@
 ### My [data and R script](/Data) is open for viewing, you can also check out my [results](/Data/Result).
 
 ### Here is the [link](https://github.com/SimonS98/HMDVR_Attention_Research) to trace back to this github repo.
+
+### Here is the [notion page](https://silken-echo-ca5.notion.site/Insights-06f3048f6ea0415490fd7f4971c959fc) for the process ducumentation of this study, it is however written in both languages.
