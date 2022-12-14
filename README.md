@@ -1,7 +1,7 @@
 
 # Hi, welcome to my thesis page. 
-## Here is a special poster for the CCI 2022 showcase, you can [save](https://raw.githubusercontent.com/SimonS98/HMDVR_Attention_Research/main/Showcase_project_poster.jpg) it if you'd like.
-![Onepageintro](https://github.com/SimonS98/HMDVR_Attention_Research/blob/main/Showcase_project_poster.jpg)
+## Here is a special poster for the CCI 2022 showcase, you can [save](https://raw.githubusercontent.com/SimonS98/HMDVR_Attention_Research/main/Showcase_poster.jpg) it if you'd like.
+![Onepageintro](https://github.com/SimonS98/HMDVR_Attention_Research/blob/main/Showcase_poster.jpg)
 ### You can read my [thesis paper](/Sixiong(Simon)Sheng_Thesis.pdf).
 
 ### Or you can watch me briefly introduce [my study](https://youtu.be/6-FEdMdbTy0).
