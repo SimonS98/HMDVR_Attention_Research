@@ -1,7 +1,7 @@
 
 # Hi, welcome to my thesis page. 
 <a href="https://raw.githubusercontent.com/SimonS98/HMDVR_Attention_Research/main/One%20page%20intro.jpg" title="Download" download>Download</a>
-## Here is a special poster for the CCI 2022 showcase, you can save it if you'd like.
+## Here is a special poster for the CCI 2022 showcase, you can [save](https://raw.githubusercontent.com/SimonS98/HMDVR_Attention_Research/main/One%20page%20intro.jpg) it if you'd like.
 ![Onepageintro](https://github.com/SimonS98/HMDVR_Attention_Research/blob/main/One%20page%20intro.jpg)
 ### You can read my [thesis paper](/Sixiong(Simon)Sheng_Thesis.pdf).
 
