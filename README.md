@@ -1,7 +1,7 @@
 # The potential of head-mounted display virtual reality as an attention retention and anti- distraction tool: A study
 
 ## Hi, welcome to my thesis page.
-[Onepageintro](/One page intro.jpg)
+[Onepageintro](https://github.com/SimonS98/HMDVR_Attention_Research/blob/main/One%20page%20intro.jpg)
 ### You can read my [thesis paper](/Sixiong(Simon)Sheng_Thesis.pdf).
 
 ### Or you can watch me briefly introduce [my study](https://youtu.be/6-FEdMdbTy0).
